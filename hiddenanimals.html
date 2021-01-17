@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Busqueda Animal</title>
+    <link rel="stylesheet" href="css/estilogame2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Encuentra el Animal</h1>
+        </div>
+        
+        <div class="col-12 text-center">
+          <p id="distance"></p>
+        </div>
+
+        <div class="col-12">
+          <canvas  class=".img-fluid rounded mx-auto d-block" id="busqueda" width="640" height="640"></canvas>  
+        </div>
+        
+        <hr>
+        
+        <div class="col-12 text-center">
+          <p id="animal"></p>
+        </div>
+        
+
+        <div class="col-12">
+          <canvas  class=".img-fluid rounded mx-auto d-block" id="visor" width="100" height="100"></canvas>  
+        </div>
+
+    </div>
+
+
+    <!--Popup mensaje de felicitacion-->
+
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+          <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+          <h3>GANASTE</h3>
+          <h4>Ahora podras avanzar al siguiente nivel de aventura</h4>
+          <img src="images/gif/llama.gif" alt="ganaste">          
+      </div>
+    </div>
+
+    <!--Popup mensaje de vueleve a intentar-->
+
+    <div class="overlay1" id="overlay1">
+      <div class="popup1" id="popup1">
+          <a href="#" id="btn-cerrar-popup1" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+          <h3>SIGUE INTENTANDO</h3>
+          <h4>podras avanzar al siguiente nivel de aventura</h4>
+          <img src="images/gif/panda.gif" alt="vuelve">       
+      </div>
+    </div>
+
+    <!--Audios del juego-->
+    <audio id="time" src="sound/FX/time.mp3"></audio>
+    <audio id="ganasteSound"src="sound/FX/Powerup2.wav"></audio>
+    <audio id= "intentaSound" src="sound/FX/Powerup7.wav"></audio>
+    <audio id="cerrarPopUp" src="sound/FX/Powerup4.wav"></audio>
+
+    <script src="js/helper.js" charset="utf-8"></script>
+    <script src="js/game.js" charset="utf-8"></script>
+
+  </body>
+</html>

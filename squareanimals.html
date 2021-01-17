@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Primer Juego</title>
+    <link rel="stylesheet" href="css/estilosgame1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+
+    
+</head>
+<body>
+    
+    <div class="container py-5" style="font-family: 'Hanalei Fill', cursive;">
+        
+    </div>
+
+    <div class="container" style="font-family: 'Hanalei Fill', cursive;">
+        <div class="row">
+            <div class="col-8">
+                <h1>SquareAnimals</h1>  
+            </div>
+            <div class="col-2 "></div>
+            <div class="col-2">
+               
+                <button id="music" class="button type3 play-btn" style="margin-top: 10px; width: 200px;">
+                    <i class="fa fa-play"></i>  
+                </button>
+
+            </div>
+            <div class="col-12 ">
+                <canvas  class="rounded mx-auto d-block"  id="lienzo" width="770" height="490"></canvas>
+            </div>
+            <div class="col-8  py-2">
+                <h2>Resuelve el siguiente patron</h2> 
+            </div>
+            <div class="col-2  py-2"></div>
+            <div class="col-2 ">
+                <button id="comprobarPatron" class="button type3" style="margin-top: 10px; width: 200px;">
+                    Comprobar
+                </button>
+            </div>
+            <div class="col-12 .img-fluid">
+                <canvas class="rounded mx-auto d-block" id="patrones" width="770" height="490"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Popup mensaje de felicitacion-->
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>GANASTE</h3>
+            <h4>Ahora podras avanzar al siguiente nivel de aventura</h4>
+            <img src="images/gif/Victoria.gif" alt="ganaste">
+            
+        </div>
+    </div>
+
+    <div class="overlay1" id="overlay1">
+        <div class="popup1" id="popup1">
+            <a href="#" id="btn-cerrar-popup1" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SIGUE INTENTANDO</h3>
+            <h4>podras avanzar al siguiente nivel de aventura</h4>
+            <img src="images/gif/enemy.gif" alt="vuelve">
+            
+        </div>
+    </div>
+    
+ 
+    
+
+    <audio  id="background" src="sound/y2mate.com.mp3"></audio>
+    <audio  id="colision"  src="sound/FX/collision.wav"></audio>
+    <audio  id="movimiento"  src="sound/FX/movi1.wav"></audio>
+    <audio id="ganasteSound"src="sound/FX/Powerup2.wav"></audio>
+    <audio id= "intentaSound" src="sound/FX/Powerup7.wav"></audio>
+    <audio id="cerrarPopUp" src="sound/FX/Powerup4.wav"></audio>
+    <script src="js/squareanimals.js"></script>
+</body>
+</html>
