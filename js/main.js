@@ -138,7 +138,6 @@
 
                 offset: width6
             });
-           
 
 
             /*
