@@ -126,6 +126,18 @@
 
                 offset: width5
             });
+            
+            var width6 = $(".prog6").data("progress");
+            var progBar6 = $(".prog6");
+            skill.waypoint(function() {
+                progBar6.css({
+                    "width": width6,
+                    "transition": "2s ease-in"
+                });
+            }, {
+
+                offset: width6
+            });
            
 
 
