@@ -102,6 +102,42 @@
 
                 offset: width3
             });
+            
+            var width4 = $(".prog4").data("progress");
+            var progBar4 = $(".prog4");
+            skill.waypoint(function() {
+                progBar4.css({
+                    "width": width4,
+                    "transition": "2s ease-in"
+                });
+            }, {
+
+                offset: width4
+            });
+            
+            var width5 = $(".prog5").data("progress");
+            var progBar5 = $(".prog5");
+            skill.waypoint(function() {
+                progBar5.css({
+                    "width": width5,
+                    "transition": "2s ease-in"
+                });
+            }, {
+
+                offset: width5
+            });
+            
+            var width6 = $(".prog6").data("progress");
+            var progBar6 = $(".prog6");
+            skill.waypoint(function() {
+                progBar6.css({
+                    "width": width6,
+                    "transition": "2s ease-in"
+                });
+            }, {
+
+                offset: width6
+            });
 
 
             /*
