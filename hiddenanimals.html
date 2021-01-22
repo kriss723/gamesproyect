@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2, shrink-to-fit=no , maximum-scale=1.0">
     <title>Busqueda Animal</title>
     <link rel="stylesheet" href="css/estilogame2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -35,7 +35,13 @@
         
 
         <div class="col-12">
-          <canvas  class=".img-fluid rounded mx-auto d-block" id="visor" width="100" height="100"></canvas>  
+          <button class="open-button" id="abrir-vista">Abrir Ayuda</button>
+          <div class="form-popup" id="myForm">
+            <form class="form-container"> 
+                <canvas  class=".img-fluid rounded mx-auto d-block" id="visor" width="100" height="100"></canvas>  
+                <button type="button" class="btn cancel" id="cerrar-vista">Cerrar</button>
+            </form>
+          </div>
         </div>
 
     </div>
@@ -69,6 +75,7 @@
     <audio id= "intentaSound" src="sound/FX/Powerup7.wav"></audio>
     <audio id="cerrarPopUp" src="sound/FX/Powerup4.wav"></audio>
 
+    <script src="js/jquery.min.js"></script>
     <script src="js/helper.js" charset="utf-8"></script>
     <script src="js/game.js" charset="utf-8"></script>
 
