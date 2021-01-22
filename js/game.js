@@ -9,14 +9,17 @@ let time = 10;
 var index;
 var objanimales;
 
-// variablees para los popup //
+// variables para los popup //
 
 var nivel = false;
 var overlay = document.getElementById('overlay'),
     popup = document.getElementById('popup'),
-    btnCerrarPopup = document.getElementById('btn-cerrar-popup'); 
+    btnCerrarPopup = document.getElementById('btn-cerrar-popup'), 
     popup1 = document.getElementById('popup1'),
-    btnCerrarPopup1 = document.getElementById('btn-cerrar-popup1');     
+    btnCerrarPopup1 = document.getElementById('btn-cerrar-popup1'),
+    btnAbrirVista = document.getElementById('abrir-vista'),
+    btnCerrarVista = document.getElementById('cerrar-vista');
+    
 // variables para los sonidos //
     var llama = document.getElementById('time');
     var winSound = document.getElementById('ganasteSound');
@@ -212,7 +215,8 @@ btnCerrarPopup.addEventListener('click', function(e){
   popup.classList.remove('active');
 
   fondo.src = "images/game2/treasuremap2.jpg";
-  muestra.src = " ";
+  $('#abrir-vista').hide();
+  $('#myForm').hide();
   
   canvasB.drawImage(fondo,10,10);
 
@@ -265,5 +269,14 @@ btnCerrarPopup1.addEventListener('click', function(e){
   }, 800);
 });
 
+btnAbrirVista.addEventListener('click', function(){
+  document.getElementById("myForm").style.display = "block";
+  $('#myForm').hide();
+  $('#myForm').slideDown('slow');
+});
+
+btnCerrarVista.addEventListener('click', function(){
+  $('#myForm').slideUp('slow');
+});
 
 });
