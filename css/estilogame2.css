@@ -267,3 +267,66 @@ h1, h2{
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
+
+/* PopUp visor help find the animals
+/* Button used to open the div form - fixed at the bottom of the page */
+.open-button {
+	background-color: #555;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 23px;
+	right: 28px;
+	width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+	display: none;
+	position: fixed;
+	bottom: 500px;
+	right: 15px;
+	z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+  }
+  
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+	background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+	opacity: 1;
+  }
+
+  @media (max-width: 700px) { 
+	.open-button {
+		position: inherit;
+	
+	  }
+
+	  .form-popup {
+		display: none;
+		position: fixed;
+		bottom: 45px;
+		right: 15px;
+		z-index: 9;
+	}
+   }
+
+   @media ( min-width: 200px) and (max-width: 500px) { 
+	  .form-popup {
+		bottom: 250px;
+	}
+   }
