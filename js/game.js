@@ -59,7 +59,6 @@ class animal {
 
       animales.splice(index,1);
       reloadAnimal(); 
-      console.log('el segundo nivel es: '+nivel);
       
       if(time < 30){
 
@@ -190,8 +189,6 @@ canvasB.canvas.addEventListener('click' , (event) => {
 
 function reloadAnimal(){
 
-  console.log('tamaño del arreglo '+animales.length);
-  console.log(animales);
   if (animales.length == 0) {
     winSound.play();
     overlay.classList.add('active');
@@ -229,9 +226,6 @@ btnCerrarPopup.addEventListener('click', function(e){
   }
 
   reloadAnimal();
-
-  console.log(animales);
-  console.log(animales2);
 
 });
 
