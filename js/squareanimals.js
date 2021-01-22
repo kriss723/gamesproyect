@@ -268,7 +268,6 @@ document.addEventListener('DOMContentLoaded', () => {
             trySound.play();
             overlay1.classList.add('active');
             popup1.classList.add('active');
-            console.log('intenta otra vez');
         }
         
      });
@@ -348,8 +347,6 @@ document.addEventListener('DOMContentLoaded', () => {
               
           }
 
-          console.log( 'evento touchstart en x: '+x+' y: '+y);
-
         }
         
     }, false);
@@ -418,11 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }else{
             return false;
         }
-        /* contador de condiciones
-        console.log(rojo);
-        console.log(cafe);
-        console.log(verde);
-        console.log(blanco);*/
+        
     }
 
 //funcion de colisiones con los objetos del juego///////////////////////////////////////////////////////////////////
@@ -546,7 +539,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                
                     if (objetoActual.x < animalX2 && (objetoActual.x + objetoActual.w) > animalX1
                         && objetoActual.y < animalY2 && (objetoActual.y + objetoActual.h) > animalY1) {
-                        console.log('colision');
+                
                         colisionSound.play();
                         objetoColision = animales[index];
                          
