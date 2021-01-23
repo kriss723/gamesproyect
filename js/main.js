@@ -202,7 +202,7 @@
             direction: 'vertical',
             verticalCentered: true,
             sectionsColor: [],
-            anchors: ['home', 'about', 'squareanimals', 'hiddenanimals', 'resume','creditos'],
+            anchors: ['home', 'about', 'squareanimals', 'hiddenanimals','creditos'],
             scrollingSpeed: 700,
             easing: 'swing',
             loopBottom: true,
