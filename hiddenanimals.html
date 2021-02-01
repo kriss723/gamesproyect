@@ -15,40 +15,36 @@
   </head>
   <body>
 
-    
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1>Encuentra el Animal</h1>
-        </div>
-        
-        <div class="col-12 text-center">
-          <p id="distance"></p>
-        </div>
+   <div class="container">
 
-        <div class="col-12">
-          <canvas  class=".img-fluid rounded mx-auto d-block" id="busqueda" width="640" height="640"></canvas>  
-        </div>
-        
-        <hr>
-        
-        <div class="col-12 text-center">
-          <p id="animal"></p>
-        </div>
-        
+    <div class="row">
+      <div class="col-12 col-sm-12 col-lg-6 text-center">
+        <h1>Encuentra el Animal</h1>
+      </div>
 
-        <div class="col-12">
-          <button class="open-button" id="abrir-vista">Abrir Ayuda</button>
-          <div class="form-popup" id="myForm">
-            <form class="form-container"> 
-                <canvas  class=".img-fluid rounded mx-auto d-block" id="visor" width="100" height="100"></canvas>  
-                <button type="button" class="btn cancel" id="cerrar-vista">Cerrar</button>
-            </form>
-          </div>
-        </div>
-
+      <div class="col-12 col-sm-12 col-lg-6 text-center">
+        <p id="distance"></p>
+      </div>
     </div>
 
+    <div class="row">
+      <div class="col-12 col-sm-12 col-lg-6">
+        <canvas class=".img-fluid rounded mx-auto d-block" id="busqueda" width="640" height="640"></canvas>
+      </div>
+
+      <div class="col-1">
+      </div>
+
+      <div class="col-12 col-sm-12 col-lg-5">
+        <form class="form-container" id="formC">
+
+          <canvas class=".img-fluid rounded mx-auto d-block" id="visor" width="100" height="100"></canvas>
+
+          <p class="idanimal" id="animal"></p>
+        </form>
+      </div>
+      <hr>
+    </div>
 
     <!--Popup mensaje de felicitacion-->
 
