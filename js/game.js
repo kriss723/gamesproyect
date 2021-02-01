@@ -5,7 +5,7 @@ window.addEventListener('load',function(event){
 let mensajedistancia = document.querySelector('#distance');
 let animalito = document.querySelector('#animal');
 let objetivo = null;
-let time = 10;
+let time = 13;
 var index;
 var objanimales;
 
@@ -16,15 +16,13 @@ var overlay = document.getElementById('overlay'),
     popup = document.getElementById('popup'),
     btnCerrarPopup = document.getElementById('btn-cerrar-popup'), 
     popup1 = document.getElementById('popup1'),
-    btnCerrarPopup1 = document.getElementById('btn-cerrar-popup1'),
-    btnAbrirVista = document.getElementById('abrir-vista'),
-    btnCerrarVista = document.getElementById('cerrar-vista');
+    btnCerrarPopup1 = document.getElementById('btn-cerrar-popup1');
     
 // variables para los sonidos //
-    var llama = document.getElementById('time');
-    var winSound = document.getElementById('ganasteSound');
-    var trySound = document.getElementById('intentaSound');
-    var cerrarPopup = document.getElementById('cerrarPopUp');
+    var llama = document.getElementById('time'),
+        winSound = document.getElementById('ganasteSound'),
+        trySound = document.getElementById('intentaSound'),
+        cerrarPopup = document.getElementById('cerrarPopUp');
 
 // clase de los objetos
 
@@ -55,21 +53,18 @@ class animal {
     if (distancia < 40) {
       
       cerrarPopup.play();
+
+      $('#formC').slideUp(100)
+
       mensajedistancia.innerHTML = `<h2> Sigue asi te faltan `+(animales.length - 1)+`</h2>`;
 
       animales.splice(index,1);
       reloadAnimal(); 
+      console.log('el segundo nivel es: '+nivel);
       
-      if(time < 30){
-
         if (nivel == true) {
-          time += 2;
-        }else{
-          time += 5
-        }
-
-      }
-      
+          time += 5;
+        } 
     }
 
   }
@@ -139,8 +134,6 @@ let animales2 = [
 
 reloadAnimal();
 
-var contador = countdown();
-
 function launcher(){
 
   this.render = function(){
@@ -198,8 +191,7 @@ function reloadAnimal(){
     objetivo = animalesAzar();
     //muestra.src = objetivo.url;
     canvasC.drawImage(muestra,(-1*(objetivo.xpunto - 30)), (-1*(objetivo.ypunto - 30)));
-    console.log(objetivo.x);
-    console.log('index del animal es '+ index);
+    $('#formC').slideDown('slow');
     animalito.innerHTML = `<h1>${objetivo.name}</h1>`
   }
   
@@ -211,10 +203,13 @@ btnCerrarPopup.addEventListener('click', function(e){
   overlay.classList.remove('active');
   popup.classList.remove('active');
 
+  /*Modificaciones realizadas tiempo y visor del animal*/
+
   fondo.src = "images/game2/treasuremap2.jpg";
-  $('#abrir-vista').hide();
-  $('#myForm').hide();
-  
+  muestra.src = "images/game2/treasuremap2.jpg";
+
+  var contador = countdown();
+
   canvasB.drawImage(fondo,10,10);
 
   mensajedistancia.innerHTML = `<h2>Nuevo tablero</h2>`
@@ -226,7 +221,6 @@ btnCerrarPopup.addEventListener('click', function(e){
   }
 
   reloadAnimal();
-
 });
 
 
@@ -261,16 +255,6 @@ btnCerrarPopup1.addEventListener('click', function(e){
   setTimeout(() => {
     location.reload();
   }, 800);
-});
-
-btnAbrirVista.addEventListener('click', function(){
-  document.getElementById("myForm").style.display = "block";
-  $('#myForm').hide();
-  $('#myForm').slideDown('slow');
-});
-
-btnCerrarVista.addEventListener('click', function(){
-  $('#myForm').slideUp('slow');
 });
 
 });
