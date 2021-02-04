@@ -1,22 +1,7 @@
 /*------------------------------------
  *Author:FortunaTheme
- *Template:Rivo
  *Version:1.1
- *-------------------------------------
- */
 
-/*--------Table of Content----------
-* 01.header
-* 02.welcome section
-* 03.about
-* 04.service
-* 05.portfolio
-* 06.testimonial
-* 07.blog
-* 08.contact
-* 09.footer
-*----------------------------------
-*/
 /*-----------------header-----------------*/
 
 header {
@@ -736,3 +721,131 @@ footer .copyright p {
   color: #ddd;
   font-weight: 500;
 }
+
+/*-------------------testimonial section---------------*/
+
+.imgBg #client-testimonial {
+  background: url(../images/testimonialBg.jpg);
+  color: #383838;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+.vantaBg #client-testimonial {
+  background: #1e1e1e;
+  color: #383838;
+}
+
+.client-testimonial .title-small p::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 36px;
+  top: 12px;
+}
+
+.client-testimonial .title-small p::after {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 12px;
+  right: 40px;
+}
+
+.client-testimonial #universidad{
+  font-size: 16px;
+  color: #ccc;
+
+}
+.client-testimonial .client-area {
+  padding-top: 28px;
+}
+
+.client-testimonial .sub-header {
+  color: #fff;
+}
+
+.client-testimonial .testimonial-header {
+  padding-bottom: 16px;
+}
+
+.client-testimonial .testimonial-title h3 {
+  color: #e7e7e7;
+}
+
+.client-testimonial #owl-demo-testimonial .item {
+  border-radius: 3px;
+  text-align: center;
+  transition: all 0.5s;
+  max-width: 850px;
+  margin: 0 auto;
+  background: #e9e9e9;
+  margin: 0 20px;
+  border-radius: 0px;
+  transition: all 0.5s;
+}
+
+.client-testimonial #owl-demo-testimonial .item:hover {
+  background: #383838;
+  color: #fff;
+}
+.client-testimonial .owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
+  padding: 4px 11px;
+  background: #000;
+  border-radius: 0px;
+}
+
+.client-testimonial .client-img img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  border-radius: 70px;
+  border: 4px solid rgba(102, 102, 102, 0.2);
+}
+
+.client-testimonial .quote-text {
+  padding: 36px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.client-testimonial .quote-text {
+  padding: 24px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.client-testimonial .owl-theme .owl-controls .owl-page span {
+  border-radius: 0px;
+  background: #ccc;
+}
+
+.client-testimonial .owl-theme .owl-controls .active span {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.client-testimonial .owl-theme .owl-controls .owl-page span {
+  background: #fff;
+  opacity: 1;
+}
+
+.client-testimonial .name {
+  font-weight: 800;
+  padding-top: 12px;
+}
+
+.client-testimonial .client-img {
+  padding-top: 32px;
+}
+
+.client-testimonial .client-identity {
+  margin-bottom: 10px;
+}
+
