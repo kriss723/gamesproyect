@@ -202,7 +202,7 @@
             direction: 'vertical',
             verticalCentered: true,
             sectionsColor: [],
-            anchors: ['home', 'about', 'squareanimals', 'hiddenanimals','creditos'],
+            anchors: ['home', 'about', 'client-testimonial', 'squareanimals', 'hiddenanimals','creditos'],
             scrollingSpeed: 700,
             easing: 'swing',
             loopBottom: true,
@@ -255,6 +255,45 @@
             closeOnContentClick: true,
             tLoading: '', // remove text from preloader
         });
+        
+        /*
+             * -----------------------------------------------------------------
+             *--------------------Owl Carousel For Testimonial------------------
+             * -----------------------------------------------------------------
+             */
+
+        var testimonial = $("#client-testimonial #owl-demo-testimonial");
+
+            testimonial.owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 5000,
+                items: 3,
+                autoPlay: 2000,
+                loop: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 1
+                        
+                    },
+                    // breakpoint from 480 up
+                    480: {
+                        items: 1
+                    },
+                    // breakpoint from 768 up
+                    900: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                },
+                pauseOnHover: true,
+                nav: false,
+                dots: false
+                
+            });
+
 
         /*
          * -----------------------------------------------------------------
