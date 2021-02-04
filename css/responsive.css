@@ -218,6 +218,11 @@
     width: 100% !important;
     left: 0% !important;
   }
+  
+  header .logo-area .logo img{
+    width: 50px;
+  }
+  
   /*--------------service----------------*/
   .service .item {
     margin-left: 10px;
@@ -341,6 +346,10 @@
   }
 }
 @media screen and (max-width: 464px) {
+  /*--------------header-logo-area------------*/
+  header .logo-area .logo img{
+    width: 37px;
+  }
   /*--------------welcome-area----------------*/
   .welcome-text h1 {
     font-size: 40px;
