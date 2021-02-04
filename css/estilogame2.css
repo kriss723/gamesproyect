@@ -8,7 +8,7 @@ body {
   }
 h1, h2{
 	font-family: 'Fredericka the Great', cursive;
-	color: #BBBBBB;
+	color: aliceblue;
 }
 /*---------popup Estilos----------------*/
 
@@ -333,8 +333,20 @@ h1, h2{
     color: #85796b;
   }
 
-  #animal {
+    #animal {
 	text-align: center;
+  }
+  
+  #animal h1{
+	  color: black;
+  }
+  
+  #distane{
+	  text-align: center;
+  }
+
+  #distance h2{
+	  color: chartreuse;
   }
   
   
