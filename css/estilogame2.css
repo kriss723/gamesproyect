@@ -302,8 +302,7 @@ h1, h2{
 	padding: 10px;
 	margin-top: 10px;
 	background-color: white;
-	width: 33%;
-	margin-left: 30%;
+	margin-left: 20%;
 	transition: all .01s ease;
 	border-radius: 3%;
 	box-shadow: 0 2px 4px rgb(0 0 0 / 50%) inset, 0 1px 0 #fff;
@@ -311,8 +310,6 @@ h1, h2{
   }
 
   #animal {
-	writing-mode: vertical-rl;
-	text-orientation: upright;
 	text-align: center;
   }
   
@@ -330,7 +327,8 @@ h1, h2{
   /*Medias queries*/
   @media (max-width: 1200px) { 
 	.form-container{
-		width: 40%;
+		width: 80%;
+		margin-left: 100px;
 	}
    }
 
