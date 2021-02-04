@@ -277,5 +277,34 @@ body {
 	to { opacity: 1; }
 }
 
+/*----------Carga del preload-------------*/
+
+  .preloader {
+	background: radial-gradient(
+      circle,
+      rgb(75, 177, 69) 0%,
+      rgb(31, 189, 168) 89%,
+      rgb(22, 138, 122) 100%
+	);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 99999;
+  }
+  
+  .preloader-img {
+	background-image: url(../images/loading.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 200px;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+	position: absolute;
+	top: 50%;
+	width: 200px;
+  }
+
 
   
