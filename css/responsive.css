@@ -455,8 +455,40 @@
     margin: 0px 5px;
     margin-bottom: 20px;
   }
-  /*--------------portfolio----------------*/
-  .magnify-icon p {
-    top: 63%;
+  /*--------------integrantes----------------*/
+  .client-testimonial .section-title {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    color: #fff;
+    font-family: "Martel", serif;
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+}
+
+/*--------------Condicional media querie-----------*/
+
+@media (min-width: 465px) and (max-width:575px){
+
+  .client-testimonial .testimonial-header .section-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    margin: 0 auto;
+    font-weight: 800;
+    color: #fff;
+    font-family: "Martel", serif;
+    padding-left: 100px;
+  }
+
+  .client-testimonial .section-title {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
+    color: #fff;
+    font-family: "Martel", serif;
+    margin-top: 10px;
+    margin-left: 100px;
   }
 }
